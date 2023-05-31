@@ -190,19 +190,20 @@
 				<div class="carousel-item crs-img-4">
 					<div class="container">
 						<div class="carousel-caption pb-5 mb-5 text-left">
-							<h5 class="display-4 text-light"style="font-size:1.3rem;">Part 4: Continuous Learning and Specializations</h5>
+							<h5 class="display-4 text-light" style="font-size: 1.3rem;">Part 4: Continuous Learning and Specializations</h5>
 							<p>
 								Salomon's commitment to continuous learning is evident through his pursuit of advanced certifications and specializations. He has obtained certifications in machine learning and artificial intelligence from renowned institutions, further enhancing his expertise in these cutting-edge fields. Additionally, Salomon has undertaken specialized training in areas such as computer vision algorithms, natural language processing techniques, and deep reinforcement learning. By continuously expanding his knowledge and skills, Salomon remains at the forefront of technological advancements and is well-equipped to tackle the complex challenges of the future.
 							</p>
-							<!-- <div id="details4" class="collapse">
+							<div id="details4" class="collapse">
 								<p>
 									Salomon's commitment to continuous learning is evident through his pursuit of advanced certifications and specializations. He has obtained certifications in machine learning and artificial intelligence from renowned institutions, further enhancing his expertise in these cutting-edge fields. Additionally, Salomon has undertaken specialized training in areas such as computer vision algorithms, natural language processing techniques, and deep reinforcement learning. By continuously expanding his knowledge and skills, Salomon remains at the forefront of technological advancements and is well-equipped to tackle the complex challenges of the future.
 								</p>
-							</div> -->
-							<a href="#details4" class="btn btn-primary" data-toggle="collapse">Read More</a>
+							</div>
+							<a href="#details4" class="btn btn-primary" data-toggle="collapse" data-target="#details4" aria-expanded="false" aria-controls="details4">Read More</a>
 						</div>
 					</div>
 				</div>
+				
 				<a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="sr-only">Previous</span>
@@ -218,9 +219,24 @@
 			</div>
 			
 		</section>
+
+		
 		<!-- Slider Section End -->
 		
 	
+<!-- Add the following JavaScript code at the end of your HTML document -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.carousel-item .collapse').on('show.bs.collapse', function() {
+			$(this).siblings('.btn').html('Read Less');
+		}).on('hide.bs.collapse', function() {
+			$(this).siblings('.btn').html('Read More');
+		});
+	});
+</script>
+
 <!--	Slider Section End -->
 
 	<!-- Welcome Section Start -->
