@@ -272,5 +272,16 @@ body{
 		margin-left: 50px;
 	}	
 }
-
+@media (max-width: 767px) {
+	/* Styles for small screens */
+	.carousel-caption {
+	  text-align: center; /* Center-align the captions */
+	}
+	
+	.carousel-caption h5,
+	.carousel-caption h6 {
+	  font-size: 20px; /* Adjust the font size for titles */
+	}
+  }
+  
 
